@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{% load static %}<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Favicon -->
-    <link href="assets/images/favicon.png" rel="icon" type="image/png">
+    <link href="{% static 'assets/images/favicon.png' %}" rel="icon" type="image/png">
 
     <!-- title and description-->
     <title>Socialite</title>
     <meta name="description" content="Socialite - Social sharing network HTML Template">
    
     <!-- Syntax Highlighter -->
-    <link rel="stylesheet" type="text/css" href="assets/syntax-highlighter/styles/shCore.css" media="all">
-    <link rel="stylesheet" type="text/css" href="assets/syntax-highlighter/styles/shCoreMidnight.css" media="all">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/syntax-highlighter/styles/shCore.css' %}" media="all">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/syntax-highlighter/styles/shCoreMidnight.css' %}" media="all">
   
       
     <!-- css files -->
-    <link rel="stylesheet" href="assets/css/tailwind.css">
-    <link rel="stylesheet" href="assets/css/style.css">  
+    <link rel="stylesheet" href="{% static 'assets/css/tailwind.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">  
     
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -38,7 +38,7 @@
 
             <div class="flex items-center gap-8">
                 <div class="flex-1 space-y-2">
-                <img src="assets/images/logo-light.png" alt="" class="w-36" uk-toggle="target: #side; cls: max-lg:-translate-x-full">
+                <img src="{% static 'assets/images/logo-light.png' %}" alt="" class="w-36" uk-toggle="target: #side; cls: max-lg:-translate-x-full">
                     <p class="font-normal text-blue-200/70 text-lg pl-11"> built with <a href="https://tailwindcss.com/" target="_blank">tailwindcss</a> and <a href="https://getuikit.com/" target="_blank">Uikit</a>  framework  </p>
                 </div>
             </div>
@@ -251,7 +251,7 @@
 
                                         <li> 
                                             <a href="#" onclick="openPage('tailCss')" class="group pl-10 py-2 flex items-center gap-2 hover:bg-slate-800 text-sm"> 
-                                                <img src="assets/images/brand-tailwind.svg" class="w-5" alt="">
+                                                <img src="{% static 'assets/images/brand-tailwind.svg" class="w-5" alt="">
                                                 <span> style.css </span> 
                                             </a>
                                         </li>
@@ -277,7 +277,7 @@
                         </li>
                          <li> 
                             <a href="#" onclick="openPage('tailConfig')" class="group pl-10 py-2 flex items-center gap-2 hover:bg-slate-800 text-sm"> 
-                                <img src="assets/images/brand-tailwind.svg" class="w-5" alt="">
+                                <img src="{% static 'assets/images/brand-tailwind.svg" class="w-5" alt="">
                                 <span> tailwind.config.js </span> 
                             </a> 
                         </li>
@@ -976,9 +976,9 @@
                     <pre class="brush: html">
                         
 
-<!-- <!DOCTYPE html>
+<!-- {% load static %}<!DOCTYPE html>
 <html lang="en"> --> 
-<!DOCTYPE html>
+{% load static %}<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -986,15 +986,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Favicon -->
-    <link href="assets/images/favicon.png" rel="icon" type="image/png">
+    <link href="{% static 'assets/images/favicon.png' %}" rel="icon" type="image/png">
 
     <!-- title and description-->
     <title>Socialite</title>
     <meta name="description" content="Socialite - Social sharing network HTML Template">
    
     <!-- css files -->
-    <link rel="stylesheet" href="assets/css/tailwind.css">
-    <link rel="stylesheet" href="assets/css/style.css">  
+    <link rel="stylesheet" href="{% static 'assets/css/tailwind.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">  
     
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -1020,11 +1020,11 @@
                                 <ion-icon name="close-outline" class="hidden text-2xl group-aria-expanded:block"></ion-icon>
                         </button>
                         <div id="logo">
-                            <a href="feed.html"> 
-                                <img src="assets/images/logo.png" alt="" class="w-28 md:block hidden dark:!hidden">
-                                <img src="assets/images/logo-light.png" alt="" class="dark:md:block hidden">
-                                <img src="assets/images/logo-mobile.png" class="hidden max-md:block w-20 dark:!hidden" alt="">
-                                <img src="assets/images/logo-mobile-light.png" class="hidden dark:max-md:block w-20" alt="">
+                            <a  href="{% url 'index' %}"> 
+                                <img src="{% static 'assets/images/logo.png' %}" alt="" class="w-28 md:block hidden dark:!hidden">
+                                <img src="{% static 'assets/images/logo-light.png' %}" alt="" class="dark:md:block hidden">
+                                <img src="{% static 'assets/images/logo-mobile.png' %}" class="hidden max-md:block w-20 dark:!hidden" alt="">
+                                <img src="{% static 'assets/images/logo-mobile-light.png' %}" class="hidden dark:max-md:block w-20" alt="">
                             </a>
                         </div>
                         
@@ -1054,14 +1054,14 @@
                     
                         <ul>
                             <li>
-                                <a href="feed.html">
-                                    <img src="assets/images/icons/home.png" alt="feeds" class="w-6">
+                                <a  href="{% url 'index' %}">
+                                    <img src="{% static 'assets/images/icons/home.png' %}" alt="feeds" class="w-6">
                                     <span> Feed </span> 
                                 </a>
                             </li>
                             <li>
-                                <a href="messages.html">
-                                    <img src="assets/images/icons/message.png" alt="messages" class="w-5">
+                                <a  href="{% url 'messages' %}">
+                                    <img src="{% static 'assets/images/icons/message.png' %}" alt="messages" class="w-5">
                                     <span> messages </span> 
                                 </a>
                             </li> 
@@ -1085,13 +1085,13 @@
     </div>
 
     <!-- Uikit js you can use cdn  https://getuikit.com/docs/installation  or fine the latest  https://getuikit.com/docs/installation -->
-    <script src="assets/js/uikit.min.js"></script>
-    <script src="assets/js/simplebar.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="{% static 'assets/js/uikit.min.js' %}"></script>
+    <script src="{% static 'assets/js/simplebar.js' %}"></script>
+    <script src="{% static 'assets/js/script.js' %}"></script>
 
     <!-- Ion icon -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js' %}"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js' %}"></script>
  
 
 
@@ -1197,7 +1197,7 @@
 
                     </pre>
 
-                    <img src="assets/images/demos/code-prev2.jpg" class="w-full" alt="">
+                    <img src="{% static 'assets/images/demos/code-prev2.jpg' %}" class="w-full" alt="">
 
                 </div>
 
@@ -1214,7 +1214,7 @@
  
                 <div class="lg:w-[calc(100vw-320px)] w-full overflow-y-auto lg:h-[calc(100vh-180px)] h-[calc(100vh-160px)] code-editor">
 
-                    <img src="assets/images/demos/code-prev3.jpg" class="w-full" alt="">
+                    <img src="{% static 'assets/images/demos/code-prev3.jpg' %}" class="w-full" alt="">
 
                 </div>
 
@@ -1227,20 +1227,20 @@
  
  
     <!-- Javascript  -->
-    <script src="assets/js/uikit.min.js"></script>
-    <script src="assets/js/simplebar.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="{% static 'assets/js/uikit.min.js' %}"></script>
+    <script src="{% static 'assets/js/simplebar.js' %}"></script>
+    <script src="{% static 'assets/js/script.js' %}"></script>
 
 
     <!-- Ion icon -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js' %}"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js' %}"></script>
 
     <!-- Essential JavaScript Libraries
 	==============================================-->
-    <script type="text/javascript" src="assets/syntax-highlighter/scripts/shCore.js"></script>
-    <script type="text/javascript" src="assets/syntax-highlighter/scripts/shBrushJScript.js"></script>
-    <script type="text/javascript" src="assets/syntax-highlighter/scripts/shBrushXml.js"></script>
+    <script type="text/javascript" src="{% static 'assets/syntax-highlighter/scripts/shCore.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/syntax-highlighter/scripts/shBrushJScript.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/syntax-highlighter/scripts/shBrushXml.js' %}"></script>
     <script type="text/javascript">
         SyntaxHighlighter.all()
     </script>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{% load static %}<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Favicon -->
-    <link href="assets/images/favicon.png" rel="icon" type="image/png">
+    <link href="{% static 'assets/images/favicon.png' %}" rel="icon" type="image/png">
 
     <!-- title and description-->
     <title>Socialite</title>
     <meta name="description" content="Socialite - Social sharing network HTML Template">
    
     <!-- css files -->
-    <link rel="stylesheet" href="assets/css/tailwind.css">
-    <link rel="stylesheet" href="assets/css/style.css">  
+    <link rel="stylesheet" href="{% static 'assets/css/tailwind.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">  
     
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -38,7 +38,7 @@
                         <ion-icon name="menu" class="group-aria-expanded:inline hidden"></ion-icon>
                         <ion-icon name="close" class="group-aria-expanded:hidden"></ion-icon>
                     </button>
-                    <a href="index.html"><img src="assets/images/logo.png" alt="" class="h-7"></a>
+                    <a href="index.html"><img src="{% static 'assets/images/logo.png' %}" alt="" class="h-7"></a>
                 </div>
  
                 <div id="header-nav" class="max-md:hidden max-md:bg-white max-md:p-5 max-md:fixed max-md:top-0 max-md:shadow-md max-md:left-0 max-md:pt-14 max-md:w-full max-md:z-10">
@@ -80,7 +80,7 @@
                     
                     <div class="flex flex-col justify-center mt-6 text-center gap-6">
                         <div>
-                            <img src="assets/images/logo-icon-2.png" alt="" class="max-md:w-24  mx-auto">
+                            <img src="{% static 'assets/images/logo-icon-2.png' %}" alt="" class="max-md:w-24  mx-auto">
                         </div>
                         <p class="max-w-2xl mx-auto text-gray-500 sm:text-lg text-sm leading-relaxed dark:text-white"> Professional and elegant template for creating a social network , designed with a clean, customizable and modern</p>
                     </div>
@@ -99,17 +99,17 @@
                     <div class="flex items-center justify-center relative md:mt-32 mt-20" >
         
                         <div class="lg:rounded-xl rounded-md shadow-xl z-10 scale-125 overflow-hidden relative w-1/2">
-                            <img src="assets/images/demos/home.png" alt="" class="">
+                            <img src="{% static 'assets/images/demos/home.png' %}" alt="" class="">
                         </div>
         
                         <div class="w-1/2 absolute left-0 delay-500 uk-animation-slide-right-medium">
                             <div class="lg:rounded-xl rounded-md shadow-md overflow-hidden -skew-x-6">
-                                <img src="assets/images/demos/messages.png" alt="">
+                                <img src="{% static 'assets/images/demos/messages.png' %}" alt="">
                             </div>
                         </div>
                         <div class="w-1/2 absolute right-0 duration-50 uk-animation-slide-left-medium">
                             <div class="lg:rounded-xl rounded-md shadow-md overflow-hidden skew-x-6">
-                                <img src="assets/images/demos/timeline.png" alt="">
+                                <img src="{% static 'assets/images/demos/timeline.png' %}" alt="">
                             </div>
                         </div>
      
@@ -194,18 +194,18 @@
                 <div class="grid sm:grid-cols-3 gap-6 lg:mt-20 mt-10 text-center font-normal capitalize"   uk-scrollspy="target: > a ; cls: uk-animation-slide-bottom-small ; delay: 160">
                     
                    
-                    <a href="feed.html" target="_blank">
+                    <a  href="{% url 'index' %}" target="_blank">
                         <div class="group"> 
                             <div class="md:rounded-lg rounded-md shadow-md overflow-hidden duration-300 group-hover:-translate-y-1 group-hover:scale-[1.01] group-hover:shadow-lg">
-                                <img src="assets/images/demos/home.png" alt="" class="w-full h-full object-cover inset-0">
+                                <img src="{% static 'assets/images/demos/home.png' %}" alt="" class="w-full h-full object-cover inset-0">
                             </div>
                             <p class="py-4 group-hover:text-black"> Home </p> 
                         </div>
                     </a>
-                    <a href="messages.html" target="_blank">
+                    <a  href="{% url 'messages' %}" target="_blank">
                         <div class="group"> 
                             <div class="md:rounded-lg rounded-md shadow-md overflow-hidden duration-300 group-hover:-translate-y-1 group-hover:scale-[1.01] group-hover:shadow-lg">
-                                <img src="assets/images/demos/messages.png" alt="" class="w-full h-full object-cover inset-0">
+                                <img src="{% static 'assets/images/demos/messages.png' %}" alt="" class="w-full h-full object-cover inset-0">
                             </div>
                             <p class="py-4 group-hover:text-black"> messages </p> 
                         </div>
@@ -213,7 +213,7 @@
                     <a href="video.html" target="_blank">
                         <div class="group"> 
                             <div class="md:rounded-lg rounded-md shadow-md overflow-hidden duration-300 group-hover:-translate-y-1 group-hover:scale-[1.01] group-hover:shadow-lg">
-                                <img src="assets/images/demos/videos.png" alt="" class="w-full h-full object-cover inset-0">
+                                <img src="{% static 'assets/images/demos/videos.png' %}" alt="" class="w-full h-full object-cover inset-0">
                             </div>
                             <p class="py-4 group-hover:text-black"> Videos </p> 
                         </div>
@@ -221,7 +221,7 @@
                     <a href="video-watch.html" target="_blank">
                         <div class="group"> 
                             <div class="md:rounded-lg rounded-md shadow-md overflow-hidden duration-300 group-hover:-translate-y-1 group-hover:scale-[1.01] group-hover:shadow-lg">
-                                <img src="assets/images/demos/videos-watch.png" alt="" class="w-full h-full object-cover inset-0">
+                                <img src="{% static 'assets/images/demos/videos-watch.png' %}" alt="" class="w-full h-full object-cover inset-0">
                             </div>
                             <p class="py-4 group-hover:text-black"> Video watch</p> 
                         </div>
@@ -229,7 +229,7 @@
                     <a href="event.html" target="_blank">
                         <div class="group"> 
                             <div class="md:rounded-lg rounded-md shadow-md overflow-hidden duration-300 group-hover:-translate-y-1 group-hover:scale-[1.01] group-hover:shadow-lg">
-                                <img src="assets/images/demos/events.png" alt="" class="w-full h-full object-cover inset-0">
+                                <img src="{% static 'assets/images/demos/events.png' %}" alt="" class="w-full h-full object-cover inset-0">
                             </div>
                             <p class="py-4 group-hover:text-black"> event </p> 
                         </div>
@@ -237,7 +237,7 @@
                     <a href="event-2.html" target="_blank">
                         <div class="group"> 
                             <div class="md:rounded-lg rounded-md shadow-md overflow-hidden duration-300 group-hover:-translate-y-1 group-hover:scale-[1.01] group-hover:shadow-lg">
-                                <img src="assets/images/demos/event-2.png" alt="" class="w-full h-full object-cover inset-0">
+                                <img src="{% static 'assets/images/demos/event-2.png' %}" alt="" class="w-full h-full object-cover inset-0">
                             </div>
                             <p class="py-4 group-hover:text-black"> event 2 </p> 
                         </div>
@@ -245,7 +245,7 @@
                     <a href="pages.html" target="_blank">
                         <div class="group"> 
                             <div class="md:rounded-lg rounded-md shadow-md overflow-hidden duration-300 group-hover:-translate-y-1 group-hover:scale-[1.01] group-hover:shadow-lg">
-                                <img src="assets/images/demos/pages.png" alt="" class="w-full h-full object-cover inset-0">
+                                <img src="{% static 'assets/images/demos/pages.png' %}" alt="" class="w-full h-full object-cover inset-0">
                             </div>
                             <p class="py-4 group-hover:text-black"> pages </p> 
                         </div>
@@ -253,7 +253,7 @@
                     <a href="groups.html" target="_blank">
                         <div class="group"> 
                             <div class="md:rounded-lg rounded-md shadow-md overflow-hidden duration-300 group-hover:-translate-y-1 group-hover:scale-[1.01] group-hover:shadow-lg">
-                                <img src="assets/images/demos/groups.png" alt="" class="w-full h-full object-cover inset-0">
+                                <img src="{% static 'assets/images/demos/groups.png' %}" alt="" class="w-full h-full object-cover inset-0">
                             </div>
                             <p class="py-4 group-hover:text-black"> groups </p> 
                         </div>
@@ -261,7 +261,7 @@
                     <a href="groups-2.html" target="_blank">
                         <div class="group"> 
                             <div class="md:rounded-lg rounded-md shadow-md overflow-hidden duration-300 group-hover:-translate-y-1 group-hover:scale-[1.01] group-hover:shadow-lg">
-                                <img src="assets/images/demos/groups-2.png" alt="" class="w-full h-full object-cover inset-0">
+                                <img src="{% static 'assets/images/demos/groups-2.png' %}" alt="" class="w-full h-full object-cover inset-0">
                             </div>
                             <p class="py-4 group-hover:text-black"> groups 2 </p> 
                         </div>
@@ -269,7 +269,7 @@
                     <a href="market.html" target="_blank">
                         <div class="group"> 
                             <div class="md:rounded-lg rounded-md shadow-md overflow-hidden duration-300 group-hover:-translate-y-1 group-hover:scale-[1.01] group-hover:shadow-lg">
-                                <img src="assets/images/demos/products.png" alt="" class="w-full h-full object-cover inset-0">
+                                <img src="{% static 'assets/images/demos/products.png' %}" alt="" class="w-full h-full object-cover inset-0">
                             </div>
                             <p class="py-4 group-hover:text-black"> Marketplace </p> 
                         </div>
@@ -277,7 +277,7 @@
                     <a href="product-view-1.html" target="_blank">
                         <div class="group"> 
                             <div class="md:rounded-lg rounded-md shadow-md overflow-hidden duration-300 group-hover:-translate-y-1 group-hover:scale-[1.01] group-hover:shadow-lg">
-                                <img src="assets/images/demos/products.png" alt="" class="w-full h-full object-cover inset-0">
+                                <img src="{% static 'assets/images/demos/products.png' %}" alt="" class="w-full h-full object-cover inset-0">
                             </div>
                             <p class="py-4 group-hover:text-black"> product-view 1 </p> 
                         </div>
@@ -285,7 +285,7 @@
                     <a href="product-view-2.html" target="_blank">
                         <div class="group"> 
                             <div class="md:rounded-lg rounded-md shadow-md overflow-hidden duration-300 group-hover:-translate-y-1 group-hover:scale-[1.01] group-hover:shadow-lg">
-                                <img src="assets/images/demos/product-view-2.png" alt="" class="w-full h-full object-cover inset-0">
+                                <img src="{% static 'assets/images/demos/product-view-2.png' %}" alt="" class="w-full h-full object-cover inset-0">
                             </div>
                             <p class="py-4 group-hover:text-black"> product-view 2 </p> 
                         </div>
@@ -293,7 +293,7 @@
                     <a href="blog.html" target="_blank">
                         <div class="group"> 
                             <div class="md:rounded-lg rounded-md shadow-md overflow-hidden duration-300 group-hover:-translate-y-1 group-hover:scale-[1.01] group-hover:shadow-lg">
-                                <img src="assets/images/demos/blogs.png" alt="" class="w-full h-full object-cover inset-0">
+                                <img src="{% static 'assets/images/demos/blogs.png' %}" alt="" class="w-full h-full object-cover inset-0">
                             </div>
                             <p class="py-4 group-hover:text-black"> blog </p> 
                         </div>
@@ -302,7 +302,7 @@
                      <a href="blog-2.html" target="_blank">
                         <div class="group"> 
                             <div class="md:rounded-lg rounded-md shadow-md overflow-hidden duration-300 group-hover:-translate-y-1 group-hover:scale-[1.01] group-hover:shadow-lg">
-                                <img src="assets/images/demos/blogs-2.png" alt="" class="w-full h-full object-cover inset-0">
+                                <img src="{% static 'assets/images/demos/blogs-2.png' %}" alt="" class="w-full h-full object-cover inset-0">
                             </div>
                             <p class="py-4 group-hover:text-black"> blog 2 </p> 
                         </div>
@@ -310,7 +310,7 @@
                     <a href="blog-read.html" target="_blank">
                         <div class="group"> 
                             <div class="md:rounded-lg rounded-md shadow-md overflow-hidden duration-300 group-hover:-translate-y-1 group-hover:scale-[1.01] group-hover:shadow-lg">
-                                <img src="assets/images/demos/blog-read.png" alt="" class="w-full h-full object-cover inset-0">
+                                <img src="{% static 'assets/images/demos/blog-read.png' %}" alt="" class="w-full h-full object-cover inset-0">
                             </div>
                             <p class="py-4 group-hover:text-black"> blog read </p> 
                         </div>
@@ -318,7 +318,7 @@
                     <a href="games.html" target="_blank">
                         <div class="group"> 
                             <div class="md:rounded-lg rounded-md shadow-md overflow-hidden duration-300 group-hover:-translate-y-1 group-hover:scale-[1.01] group-hover:shadow-lg">
-                                <img src="assets/images/demos/games.png" alt="" class="w-full h-full object-cover inset-0">
+                                <img src="{% static 'assets/images/demos/games.png' %}" alt="" class="w-full h-full object-cover inset-0">
                             </div>
                             <p class="py-4 group-hover:text-black"> games </p> 
                         </div>
@@ -326,7 +326,7 @@
                     <a href="funding.html" target="_blank">
                         <div class="group"> 
                             <div class="md:rounded-lg rounded-md shadow-md overflow-hidden duration-300 group-hover:-translate-y-1 group-hover:scale-[1.01] group-hover:shadow-lg">
-                                <img src="assets/images/demos/funding.png" alt="" class="w-full h-full object-cover inset-0">
+                                <img src="{% static 'assets/images/demos/funding.png' %}" alt="" class="w-full h-full object-cover inset-0">
                             </div>
                             <p class="py-4 group-hover:text-black"> funding </p> 
                         </div>
@@ -335,7 +335,7 @@
                     <a href="timeline.html" target="_blank">
                         <div class="group"> 
                             <div class="md:rounded-lg rounded-md shadow-md overflow-hidden duration-300 group-hover:-translate-y-1 group-hover:scale-[1.01] group-hover:shadow-lg">
-                                <img src="assets/images/demos/timeline.png" alt="" class="w-full h-full object-cover inset-0">
+                                <img src="{% static 'assets/images/demos/timeline.png' %}" alt="" class="w-full h-full object-cover inset-0">
                             </div>
                             <p class="py-4 group-hover:text-black"> timeline </p> 
                         </div>
@@ -343,7 +343,7 @@
                     <a href="timeline-page.html" target="_blank">
                         <div class="group"> 
                             <div class="md:rounded-lg rounded-md shadow-md overflow-hidden duration-300 group-hover:-translate-y-1 group-hover:scale-[1.01] group-hover:shadow-lg">
-                                <img src="assets/images/demos/timeline-page.png" alt="" class="w-full h-full object-cover inset-0">
+                                <img src="{% static 'assets/images/demos/timeline-page.png' %}" alt="" class="w-full h-full object-cover inset-0">
                             </div>
                             <p class="py-4 group-hover:text-black"> timeline page</p> 
                         </div>
@@ -351,7 +351,7 @@
                     <a href="timeline-group.html" target="_blank">
                         <div class="group"> 
                             <div class="md:rounded-lg rounded-md shadow-md overflow-hidden duration-300 group-hover:-translate-y-1 group-hover:scale-[1.01] group-hover:shadow-lg">
-                                <img src="assets/images/demos/timeline-group.png" alt="" class="w-full h-full object-cover inset-0">
+                                <img src="{% static 'assets/images/demos/timeline-group.png' %}" alt="" class="w-full h-full object-cover inset-0">
                             </div>
                             <p class="py-4 group-hover:text-black"> timeline group </p> 
                         </div>
@@ -359,7 +359,7 @@
                     <a href="timeline-event.html" target="_blank">
                         <div class="group"> 
                             <div class="md:rounded-lg rounded-md shadow-md overflow-hidden duration-300 group-hover:-translate-y-1 group-hover:scale-[1.01] group-hover:shadow-lg">
-                                <img src="assets/images/demos/timeline-event.png" alt="" class="w-full h-full object-cover inset-0">
+                                <img src="{% static 'assets/images/demos/timeline-event.png' %}" alt="" class="w-full h-full object-cover inset-0">
                             </div>
                             <p class="py-4 group-hover:text-black"> timeline event </p> 
                         </div>
@@ -367,7 +367,7 @@
                     <a href="timeline-funding.html" target="_blank">
                         <div class="group"> 
                             <div class="md:rounded-lg rounded-md shadow-md overflow-hidden duration-300 group-hover:-translate-y-1 group-hover:scale-[1.01] group-hover:shadow-lg">
-                                <img src="assets/images/demos/timeline-funds.png" alt="" class="w-full h-full object-cover inset-0">
+                                <img src="{% static 'assets/images/demos/timeline-funds.png' %}" alt="" class="w-full h-full object-cover inset-0">
                             </div>
                             <p class="py-4 group-hover:text-black"> timeline funding </p> 
                         </div>
@@ -376,7 +376,7 @@
                     <a href="setting.html" target="_blank">
                         <div class="group"> 
                             <div class="md:rounded-lg rounded-md shadow-md overflow-hidden duration-300 group-hover:-translate-y-1 group-hover:scale-[1.01] group-hover:shadow-lg">
-                                <img src="assets/images/demos/settings.png" alt="" class="w-full h-full object-cover inset-0">
+                                <img src="{% static 'assets/images/demos/settings.png' %}" alt="" class="w-full h-full object-cover inset-0">
                             </div>
                             <p class="py-4 group-hover:text-black"> setting </p> 
                         </div>
@@ -384,7 +384,7 @@
                     <a href="upgrade.html" target="_blank">
                         <div class="group"> 
                             <div class="md:rounded-lg rounded-md shadow-md overflow-hidden duration-300 group-hover:-translate-y-1 group-hover:scale-[1.01] group-hover:shadow-lg">
-                                <img src="assets/images/demos/upgrade.png" alt="" class="w-full h-full object-cover inset-0">
+                                <img src="{% static 'assets/images/demos/upgrade.png' %}" alt="" class="w-full h-full object-cover inset-0">
                             </div>
                             <p class="py-4 group-hover:text-black"> upgrade </p> 
                         </div>
@@ -392,7 +392,7 @@
                     <a href="components.html" target="_blank">
                         <div class="group"> 
                             <div class="md:rounded-lg rounded-md shadow-md overflow-hidden duration-300 group-hover:-translate-y-1 group-hover:scale-[1.01] group-hover:shadow-lg">
-                                <img src="assets/images/demos/components.png" alt="" class="w-full h-full object-cover inset-0">
+                                <img src="{% static 'assets/images/demos/components.png' %}" alt="" class="w-full h-full object-cover inset-0">
                             </div>
                             <p class="py-4 group-hover:text-black"> components </p> 
                         </div>
@@ -401,7 +401,7 @@
                     <a href="form-login.html" target="_blank">
                         <div class="group"> 
                             <div class="md:rounded-lg rounded-md shadow-md overflow-hidden duration-300 group-hover:-translate-y-1 group-hover:scale-[1.01] group-hover:shadow-lg">
-                                <img src="assets/images/demos/form-login.png" alt="" class="w-full h-full object-cover inset-0">
+                                <img src="{% static 'assets/images/demos/form-login.png' %}" alt="" class="w-full h-full object-cover inset-0">
                             </div>
                             <p class="py-4 group-hover:text-black"> login </p> 
                         </div>
@@ -409,7 +409,7 @@
                     <a href="form-register.html" target="_blank">
                         <div class="group"> 
                             <div class="md:rounded-lg rounded-md shadow-md overflow-hidden duration-300 group-hover:-translate-y-1 group-hover:scale-[1.01] group-hover:shadow-lg">
-                                <img src="assets/images/demos/form-register.png" alt="" class="w-full h-full object-cover inset-0">
+                                <img src="{% static 'assets/images/demos/form-register.png' %}" alt="" class="w-full h-full object-cover inset-0">
                             </div>
                             <p class="py-4 group-hover:text-black"> register </p> 
                         </div>
@@ -453,10 +453,10 @@
                         <a href="#">
                             <div class=" relative">
                                 <div class="bg-gray-950 w-full py-1.5 px-3 md:rounded-t-xl rounded-t-md"> <svg class="w-6" viewBox="0 0 420 100" focusable="false"><circle fill="#ff5f57" cx="50" cy="50" r="50"></circle><circle fill="#febc2e" cx="210" cy="50" r="50"></circle><circle fill="#28c840" cx="370" cy="50" r="50"></circle></svg> </div>
-                                <img src="assets/images/demos/code-prev.jpg" alt="" class="w-full h-full object-cover inset-0 md:rounded-b-xl rounded-b-md shadow-lg">
+                                <img src="{% static 'assets/images/demos/code-prev.jpg' %}" alt="" class="w-full h-full object-cover inset-0 md:rounded-b-xl rounded-b-md shadow-lg">
     
-                                <img src="assets/images/brand-uikit.svg" alt="" class="w-12 h-12 rounded-full absolute  top-8 -right-6 bg-white shadow-md p-1.5">
-                                <img src="assets/images/brand-tailwind.svg" alt="" class="w-12 h-12 rounded-full absolute  -bottom-5 right-6 bg-white shadow-md p-1.5">
+                                <img src="{% static 'assets/images/brand-uikit.svg" alt="" class="w-12 h-12 rounded-full absolute  top-8 -right-6 bg-white shadow-md p-1.5">
+                                <img src="{% static 'assets/images/brand-tailwind.svg" alt="" class="w-12 h-12 rounded-full absolute  -bottom-5 right-6 bg-white shadow-md p-1.5">
     
                             </div>
                         </a>
@@ -544,7 +544,7 @@
                             <a href="https://themeforest.net/item/instello-ultimate-photo-sharing-html-template/29882650" target="_blank">
                                 <div class="flex flex-col">
                                     <div class="relative w-full h-full">
-                                        <img src="assets/images/demos/prev-installo.png" alt="" class="w-full h-full object-cover inset-0 md:rounded-lg rounded-md shadow">
+                                        <img src="{% static 'assets/images/demos/prev-installo.png' %}" alt="" class="w-full h-full object-cover inset-0 md:rounded-lg rounded-md shadow">
                                     </div> 
                                     <div class="relative mt-4"> 
                                         <div class="md:font-semibold font-medium lg:text-xl text-lg text-black dark:text-white">Instello</div>
@@ -560,7 +560,7 @@
                             <a href="https://themeforest.net/item/flex-modern-multipurpose-tailwind-template/34769270" target="_blank">
                                 <div class="flex flex-col">
                                     <div class="relative w-full h-full">
-                                        <img src="assets/images/demos/prev-flex.png" alt="" class="w-full h-full object-cover inset-0 md:rounded-lg rounded-md shadow">
+                                        <img src="{% static 'assets/images/demos/prev-flex.png' %}" alt="" class="w-full h-full object-cover inset-0 md:rounded-lg rounded-md shadow">
                                     </div> 
                                     <div class="relative mt-4"> 
                                         <div class="md:font-semibold font-medium lg:text-xl text-lg text-black dark:text-white">Flex</div>
@@ -576,7 +576,7 @@
                             <a href="https://themeforest.net/item/courseplus-modern-learning-management-application/23651460" target="_blank">
                                 <div class="flex flex-col">
                                     <div class="relative w-full h-full">
-                                        <img src="assets/images/demos/prev-courseplus.png" alt="" class="w-full h-full object-cover inset-0 md:rounded-lg rounded-md shadow">
+                                        <img src="{% static 'assets/images/demos/prev-courseplus.png' %}" alt="" class="w-full h-full object-cover inset-0 md:rounded-lg rounded-md shadow">
                                     </div> 
                                     <div class="relative mt-4"> 
                                         <div class="md:font-semibold font-medium lg:text-xl text-lg text-black dark:text-white"> CoursePlus </div>
@@ -617,12 +617,12 @@
 
     
     <!-- Uikit js you can use cdn  https://getuikit.com/docs/installation  or fine the latest  https://getuikit.com/docs/installation -->
-    <script src="assets/js/uikit.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="{% static 'assets/js/uikit.min.js' %}"></script>
+    <script src="{% static 'assets/js/script.js' %}"></script>
 
     <!-- Ion icon -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js' %}"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js' %}"></script>
  
 
     <!-- Dark mode -->
