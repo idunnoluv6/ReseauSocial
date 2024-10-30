@@ -1,5 +1,5 @@
 """
-ASGI config for Reseau_Social project.
+ASGI config for startup project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Reseau_Social.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'startup.settings')
 
 application = get_asgi_application()
