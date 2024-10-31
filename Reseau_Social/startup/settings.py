@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'Accounts',
     'Index',
     'Messages',
+    'Video',
 ]
 
 MIDDLEWARE = [
