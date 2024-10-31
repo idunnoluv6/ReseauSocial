@@ -46,15 +46,6 @@ INSTALLED_APPS = [
     'Messages',
     'Video',
     'Evenement',
-    'Pages',
-    'Groups',
-    'Market',
-    'Blog',
-    'Games',
-    'Fundraiser',
-    'Blog_II',
-    'Evenement_II',
-    'Groups_II',
 ]
 
 MIDDLEWARE = [
