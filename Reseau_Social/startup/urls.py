@@ -24,5 +24,16 @@ urlpatterns = [
     path('messages/', include('Messages.urls')),
     path('Video/', include('Video.urls')),
     path('Evenement/', include('Evenement.urls')),
+    path('Pages/', include('Pages.urls')),
+    path('Groups/', include('Groups.urls')),
+    path('Market/', include('Market.urls')),
+    path('Blog/', include('Blog.urls')),
+    path('Games/', include('Games.urls')),
+    path('Fundraiser/', include('Fundraiser.urls')),
+    path('Blog_II/', include('Blog_II.urls')),
+    path('Evenement_II/', include('Evenement_II.urls')),
+    path('Groups_II/', include('Groups_II.urls')),
+
+
     
 ]
