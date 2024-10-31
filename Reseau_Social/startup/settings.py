@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'Blog_II',
     'Evenement_II',
     'Groups_II',
+    'Administrateur',
 ]
 
 MIDDLEWARE = [
